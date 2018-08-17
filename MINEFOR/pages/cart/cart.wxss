@@ -49,3 +49,11 @@ page{
   right: 20rpx;
   bottom: 30rpx;
 }
+.none{
+  width: 100%;
+  height: 100%;
+}
+.none image{
+  width: 100%;
+  height: 100%;
+}
