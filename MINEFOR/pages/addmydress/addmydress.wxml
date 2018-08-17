@@ -1,0 +1,13 @@
+<!--pages/addmydress/addmydress.wxml-->
+<view>
+  <label>
+    <image src='../../img/search.png'></image>
+    <input class="search" placeholder='{{address}}' bindinput='getLocal'></input>
+  </label>
+  <view class='content'>
+    <view wx:for="{{searchArray}}" wx:key="{{item.id}}" data-id="{{item.id}}" data-title="{{item.title}}" bindtap='choice'>
+      <text class="t-1">{{item.title}}</text>
+      <text class="t-2">{{item.address}}</text>
+    </view>
+  </view>
+</view>

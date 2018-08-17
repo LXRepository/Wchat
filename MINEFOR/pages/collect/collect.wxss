@@ -1,0 +1,26 @@
+/* pages/collect/collect.wxss */
+.city{
+  width: 100%;
+  overflow: hidden;
+  background-color: #EDEDED;
+}
+.title{
+  width: 100%;
+  padding: 30rpx 10rpx;
+}
+.title image{
+  width: 50rpx;
+  height: 50rpx;
+  float: left;
+}
+.citylist{
+  text-align: center;
+  float: left;
+  width: 28%;
+  height: 66rpx;
+  line-height: 22rpx;
+  margin: 23rpx 20rpx;
+  background-color: white;
+  border-radius: 10rpx;
+  font-size: 14px;
+}

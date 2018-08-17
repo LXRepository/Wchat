@@ -1,0 +1,12 @@
+<!--components/left-nav/left-nav.wxml-->
+ <scroll-view class="left-nav" scroll-y>
+      <view 
+      wx:for="{{objectArray}}" 
+      wx:key="{{item.id}}" 
+      data-id="{{item.id}}"
+      class="tags-item {{currentItem==item.id?'is_checked':'navli'}}"
+      bindtap="changestyle"
+      >
+         {{item.message}}
+      </view>
+  </scroll-view>

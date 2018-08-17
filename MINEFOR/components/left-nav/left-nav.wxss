@@ -1,0 +1,24 @@
+/* components/left-nav/left-nav.wxss */
+.left-nav{
+
+  height: 100%;
+  flex-wrap: wrap;
+  overflow-y: auto;
+}
+
+.navli{
+  width: 100%;
+  line-height: 130rpx;
+  font-size: 12px;
+  text-align: center;
+  color: #AAA7A7;
+  background-color: #F5F5F5;
+}
+.is_checked{
+  width: 100%;
+  line-height: 130rpx;
+  font-size: 14px;
+  text-align: center;
+  background-color: white;
+  color: #21CE4D;
+}

@@ -1,0 +1,12 @@
+<!--pages/Collage/Collage.wxml-->
+<view>
+<view
+wx:for="{{plist}}" 
+      wx:key="{{item.id}}" 
+      data-id="{{item.id}}" 
+      class='plist'
+      bindtap="changestyle"
+>
+<image src='{{item.url}}'></image>
+</view>
+</view>

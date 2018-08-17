@@ -1,0 +1,44 @@
+<!--pages/addplace/addplace.wxml-->
+<view>
+<form bindsubmit="formSubmit">
+  <view class="top">
+    
+      <text class="Consignee">收 货 人</text>
+      <input class="c c-name" placeholder='请填写收货姓名' name="shr"></input>
+      <radio-group class="c c-sex" name="radio-group" bindsubmit="formSubmit">
+        <label class="radio" 
+        wx:for="{{items}}"
+        wx:key="{{items}}" 
+        data-id="{{item.id}}
+        value="{{item.value}}"
+         >
+          <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+        </label>
+      </radio-group>
+      <label class="abouttel">
+        <text class="phone">联系电话</text>
+        <input class="phone-number" name="number" placeholder='请填写收货手机号' ></input>
+      </label>
+  </view>
+  <view class="middle">
+      <text>选择城市</text><input name="city" class="city" placeholder='{{city}}' bindtap='addcity'>{{city}}</input>
+       <text>收货地址</text><input name="add" class="add" placeholder='{{address}}' bindtap='address'>{{address}}</input>
+       <text>楼牌门号</text><input name="door" class="num" placeholder='楼号/单元/门牌号'></input>
+       <text>地址类型</text><radio-group name="group-type" class="c type" bindchange="radioChange">
+        <label 
+        class="radio" 
+        wx:for="{{addarray}}"
+        wx:key="{{addarray}}" 
+        data-id="{{item.id}}
+        value="{{item.value}}"
+        >
+          <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+        </label>
+      </radio-group>
+  </view>
+  <view class="down">
+    <button formType="submit">保存地址</button>
+  </view>
+  </form>
+  <view class="tips" style="display:{{display}};">{{tip}}</view>
+</view>

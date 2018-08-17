@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/cart/cart",
+    "pages/details/details",
+    "pages/address/address",
+    "pages/addmydress/addmydress",
+    "pages/addplace/addplace",
+    "pages/mine/mine",
+    "pages/collect/collect",
+    "pages/Collage/Collage"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#21CE4D",
+    "navigationBarTitleText": "百果园",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#AAA7A7",
+    "selectedColor": "#00B26A",
+    "backgroundColor": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "img/car1.png",
+        "selectedIconPath": "img/car.png"
+      },
+      {
+        "pagePath": "pages/Collage/Collage",
+        "text": "拼团",
+        "iconPath": "img/bag1.png",
+        "selectedIconPath": "img/bag.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "付款",
+        "iconPath": "img/dd1.png",
+        "selectedIconPath": "img/dd.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "img/mine1.png",
+        "selectedIconPath": "img/mine.png"
+      }
+    ]
+  }
+}

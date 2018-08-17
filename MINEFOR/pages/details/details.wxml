@@ -1,0 +1,18 @@
+<!--pages/details/details.wxml-->
+<view>
+<image class="banner" src='{{detaillist.img}}'></image>
+<text class="title">{{detaillist.title}}</text>
+<view class="addcart">
+<text>￥{{detaillist.price}}</text>
+<button bindtap='addcount'>加入购物车</button>
+</view>
+<image class="time" src='../../img/time.png'></image>
+<image class="pj" src='../../img/pj.png'></image>
+<image class="sm" src='../../img/sm.png'></image>
+<image class="xh" src='../../img/xh.png'></image>
+<view class="count">
+<span>{{count}}</span>
+<image src='../../img/bag.png'></image>
+<button bindtap='gocart'>去结算</button>
+</view>
+</view>

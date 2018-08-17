@@ -1,0 +1,17 @@
+<!--pages/collect/collect.wxml-->
+<view class="city">
+   <view class="title">
+      <image src='../../img/dibiao.png'></image>
+      <text>已开通服务的城市</text>
+   </view>
+   <text 
+   class="citylist"
+   wx:for="{{objectArray}}" 
+   wx:key="{{item.id}}" 
+   data-id="{{item.id}}" 
+   data-name="{{item.name}}"
+   bindtap='iscity'
+   >
+   {{item.name}}
+   </text>
+</view>

@@ -1,0 +1,11 @@
+<!--pages/cart/cart.wxml-->
+
+  <view class="addplacemsg">+点击选择收货地址</view>
+  <view class="lists">
+    <view class="lists-li" wx:key="{{lists.img}}">
+      <image src='{{lists.img}}'></image>
+      <text class="title">{{lists.title}}</text>
+      <text class="count">数量：X{{lists.count}}</text>
+      <text class="spend">￥{{spend}}</text>
+    </view>
+  </view>
